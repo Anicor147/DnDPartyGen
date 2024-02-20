@@ -1,6 +1,6 @@
 #pragma once
 
-#include "CharacterClass.h"
+#include "Character.h"
 
 namespace CppCLRWinFormsProject {
 
@@ -103,7 +103,7 @@ namespace CppCLRWinFormsProject {
 #pragma endregion
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
 	{
-		CharacterClass x;
+		Character x;
 	
 
 	
