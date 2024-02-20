@@ -1,6 +1,12 @@
 #pragma once
+#include "Cleric.h"
+#include "Fighter.h"
+#include "Paladin.h"
+#include "Rogue.h"
+#include "Warlock.h"
+#include "Wizard.h"
 
-#include "Character.h"
+
 
 namespace CppCLRWinFormsProject {
 
@@ -10,6 +16,7 @@ namespace CppCLRWinFormsProject {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	
 
 	/// <summary>
 	/// Summary for Form1
@@ -77,6 +84,7 @@ namespace CppCLRWinFormsProject {
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Exit";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
 			// button3
 			// 
@@ -105,8 +113,9 @@ namespace CppCLRWinFormsProject {
 	{
 		Character x;
 	
-
-	
+	}
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		Close();
 	}
 	};
 }

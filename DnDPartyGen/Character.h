@@ -24,15 +24,12 @@ public:
 protected:
 	int healthPoint;
 	Stats charStats;
-	 
-	//Class class;
+	
 public:
 	int calculatePB() {
 		
 		return 2 +((level-1) / 4);
 	}
-	
-
 
 };
 
