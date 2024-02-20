@@ -1,5 +1,7 @@
 #pragma once
 
+#include "CharacterClass.h"
+
 namespace CppCLRWinFormsProject {
 
 	using namespace System;
@@ -65,6 +67,7 @@ namespace CppCLRWinFormsProject {
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Party Manager";
 			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// button2
 			// 
@@ -98,5 +101,11 @@ namespace CppCLRWinFormsProject {
 
 		}
 #pragma endregion
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e)
+	{
+		CharacterClass x;
+
+	
+	}
 	};
 }
