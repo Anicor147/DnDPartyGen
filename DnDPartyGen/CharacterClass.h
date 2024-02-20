@@ -7,6 +7,8 @@ using namespace std;
 
 ref class CharacterClass
 {
+public:
+	int level;
 
 };
 
