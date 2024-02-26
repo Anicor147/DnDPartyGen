@@ -3,5 +3,6 @@
 class Wizard :
     public Character
 {
+
 };
 

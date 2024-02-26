@@ -12,25 +12,36 @@ struct Stats
 } ;
 enum Race{elf,human,dwarf,tiefling,halfling,halforc};
 
+class Ability 
+{
+	int _level;
+	string _name, _description;
+	
+};
 
 class Character
 {
 public:
-	int level;
-	string name;
-	Race myRace;
+	int _level;
+	string _name;
+	Race _myRace;
 	
 
 protected:
-	int healthPoint;
-	Stats charStats;
+	int _healthPoint;
+	Stats _charStats;
 	
 public:
 	int calculatePB() {
 		
-		return 2 +((level-1) / 4);
+		return 2 +((_level-1) / 4);
 	}
 
+
+	Character(Stats charStats, int lvl, string name, Race _charRace, int hp)
+	{
+
+	}
 };
 
 
