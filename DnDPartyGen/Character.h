@@ -16,7 +16,10 @@ class Ability
 {
 	int _level;
 	string _name, _description;
-	
+
+public:
+
+	Ability(int _level, string _name, string _description = nullptr) {};
 };
 
 class Character
