@@ -5,3 +5,14 @@ class Warlock :
 {
 };
 
+class Archfey : public Warlock {
+
+};
+
+class Fiend : public Warlock {
+
+};
+
+class GreatOldOne : public Warlock {
+
+};
